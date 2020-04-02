@@ -31,11 +31,11 @@
       </div>
     </nav>
   </header>
-  <main>
-    <div class="title-wrapper">
+  <main class="page">
+    <div class="page__title-wrapper">
       <h1>Фотографии пользователей</h1>
     </div>
-    <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <p class="page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <section>
       <ul class="rewiew-list">
         <li class="rewiew">
@@ -125,15 +125,15 @@
         </li>
       </ul>
     </section>
-    <section class="editor">
+    <form class="editor">
       <p class="editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <div class="editor__img">
         <img src="#" width="" height="" alt="выбрать фото">
       </div>
       <div class="editor__filter">
-        <img class="editor__filter-item" src="#" width="" height="" alt="фильтр1">
-        <img class="editor__filter-item" src="#" width="" height="" alt="фильтр2">
-        <img class="editor__filter-item" src="#" width="" height="" alt="фильтр3">
+        <input class="editor__filter-framing" type="radio" id="framing" name="framing" value="framing">
+        <input class="editor__filter-fill" type="radio" id="fill" name="fill" value="fill">
+        <input class="editor__filter-contrast" type="radio" id="contrast" name="contrast" value="contrast">
       </div>
       <div class="editor__range">
         <div class="editor__range-scale">
@@ -142,10 +142,10 @@
         <div class="editor__range-toggle"></div>
       </div>
       <div class="editor__btn">
-        <button class="editor__btn-submit" type="submit">Запостить</button>
-        <button class="editor__btn-cancel" type="reset">Отмена</button>
+        <button class="editor__btn editor__btn--submit" type="submit">Запостить</button>
+        <button class="editor__btn editor__btn--reset" type="reset">Отмена</button>
       </div>
-    </section>
+    </form>
   </main>
   <footer>
     <a class="footer-logo" href="index.html">
