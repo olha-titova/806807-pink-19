@@ -44,8 +44,7 @@
           </a>
           <b class="rewiew__name">Анна</b>
           <p class="rewiew__time">(5 минут назад)</p>
-          <p class="rewiew__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
+          <p class="rewiew__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <a class="rewiew__like" href="#">
             <span class="rewiew__like-btn">like</span>
             <p class="rewiew__quantity">Нравится: 215</p>
@@ -131,9 +130,15 @@
         <img src="#" width="" height="" alt="выбрать фото">
       </div>
       <div class="editor__filter">
-        <input class="editor__filter-framing" type="radio" id="framing" name="framing" value="framing">
-        <input class="editor__filter-fill" type="radio" id="fill" name="fill" value="fill">
-        <input class="editor__filter-contrast" type="radio" id="contrast" name="contrast" value="contrast">
+        <label class="visually-hidden"> Кадрирование
+          <input class="editor__filter-framing" type="radio" id="framing" name="radio" value="framing">
+        </label>
+        <label class="visually-hidden"> Заливка
+          <input class="editor__filter-fill" type="radio" id="fill" name="radio" value="fill">
+        </label>
+        <label class="visually-hidden"> Контрастность
+          <input class="editor__filter-contrast" type="radio" id="contrast" name="radio" value="contrast">
+        </label>
       </div>
       <div class="editor__range">
         <div class="editor__range-scale">
@@ -141,7 +146,7 @@
         </div>
         <div class="editor__range-toggle"></div>
       </div>
-      <div class="editor__btn">
+      <div class="editor__btn-wrapper">
         <button class="editor__btn editor__btn--submit" type="submit">Запостить</button>
         <button class="editor__btn editor__btn--reset" type="reset">Отмена</button>
       </div>
