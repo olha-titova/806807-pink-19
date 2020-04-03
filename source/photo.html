@@ -130,15 +130,18 @@
         <img src="#" width="" height="" alt="выбрать фото">
       </div>
       <div class="editor__filter">
-        <label class="visually-hidden"> Кадрирование
-          <input class="editor__filter-framing" type="radio" id="framing" name="radio" value="framing">
+        <label class="editor__filter-label" for="framing">
+          <span class="visually-hidden">Кадрирование</span>
         </label>
-        <label class="visually-hidden"> Заливка
-          <input class="editor__filter-fill" type="radio" id="fill" name="radio" value="fill">
+          <input class="editor__filter-framing visually-hidden" type="radio" id="framing" name="filter" value="framing">
+        <label class="editor__filter-label">
+          <span class="visually-hidden ">Заливка</span>
         </label>
-        <label class="visually-hidden"> Контрастность
-          <input class="editor__filter-contrast" type="radio" id="contrast" name="radio" value="contrast">
-        </label>
+          <input class="editor__filter-fill visually-hidden" type="radio" id="fill" name="filter" value="fill">
+        <label class="editor__filter-label">
+          <span class="visually-hidden ">Контрастность</span>
+         </label>
+          <input class="editor__filter-contrast visually-hidden" type="radio" id="contrast" name="filter" value="contrast">
       </div>
       <div class="editor__range">
         <div class="editor__range-scale">
