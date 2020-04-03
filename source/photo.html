@@ -31,11 +31,11 @@
       </div>
     </nav>
   </header>
-  <main>
-    <div class="title-wrapper">
+  <main class="page">
+    <div class="page__title-wrapper">
       <h1>Фотографии пользователей</h1>
     </div>
-    <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <p class="page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <section>
       <ul class="rewiew-list">
         <li class="rewiew">
@@ -124,6 +124,36 @@
         </li>
       </ul>
     </section>
+    <form class="editor">
+      <p class="editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="editor__img">
+        <img src="#" width="" height="" alt="выбрать фото">
+      </div>
+      <div class="editor__filter">
+        <label class="editor__filter-label" for="framing">
+          <span class="visually-hidden">Кадрирование</span>
+        </label>
+          <input class="editor__filter-framing visually-hidden" type="radio" id="framing" name="filter" value="framing">
+        <label class="editor__filter-label">
+          <span class="visually-hidden ">Заливка</span>
+        </label>
+          <input class="editor__filter-fill visually-hidden" type="radio" id="fill" name="filter" value="fill">
+        <label class="editor__filter-label">
+          <span class="visually-hidden ">Контрастность</span>
+         </label>
+          <input class="editor__filter-contrast visually-hidden" type="radio" id="contrast" name="filter" value="contrast">
+      </div>
+      <div class="editor__range">
+        <div class="editor__range-scale">
+          <div class="editor__range-bar"></div>
+        </div>
+        <div class="editor__range-toggle"></div>
+      </div>
+      <div class="editor__btn-wrapper">
+        <button class="editor__btn editor__btn--submit" type="submit">Запостить</button>
+        <button class="editor__btn editor__btn--reset" type="reset">Отмена</button>
+      </div>
+    </form>
   </main>
   <footer>
     <a class="footer-logo" href="index.html">
