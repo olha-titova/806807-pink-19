@@ -4,28 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="#" width="" height="" alt="pink">
+    <nav>
+      <div class="main-nav">
+      <a class="main-nav__logo" href="#">
+      <img class="main-nav__logo-image" src="#" width="" height="" alt="pink">
     </a>
-    <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Раскрыть меню </button>
+    </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a class="site-list__href" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__href" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__href" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            <a class="site-list__href" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -34,26 +39,29 @@
   <main class="page-main">
     <div class="title-wrapper">
       <h1>Взгляните на жизнь иначе!</h1>
+      <img class="title-wrapper__img" src="#" width="" height="" alt="презентация">
     </div>
-    <a href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
     <section class="links">
-      <a class="links__apple" href="#">
+      <a class="links__download" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
+      <div class="links__list">
+      <a class="links__list-item" href="#">
         <img src="#" width="" height="" alt="apple">
       </a>
-      <a class="links__android" href="#">
+      <a class="links__list-item" href="#">
         <img src="#" width="" height="" alt="android">
       </a>
-      <a class="links__windows" href="#">
+      <a class="links__list-item" href="#">
         <img src="#" width="" height="" alt="windows">
       </a>
-      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8s</p>
+    </div>
+      <p class="links__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8s</p>
     </section>
     <section class="advantages">
       <div class="advantages__text">
-        <p>Устали от серости мегаполиса?</p>
-        <p> Нам есть, что вам предложить!</p>
+        <p class="advantages__text-item">Устали от серости мегаполиса?</p>
+        <p class="advantages__text-item"> Нам есть, что вам предложить!</p>
       </div>
-      <div class="advanteges__list">
+      <div class="advantages__list">
         <p class="advantages__title">Поднимает настроение</p>
         <p class="advantages__item"> Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         <p class="advantages__title">Меняет мир вокруг</p>
@@ -61,6 +69,7 @@
         <p class="advantages__title">Заводит новых друзей</p>
         <p class="advantages__item">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
+      <img class="title-wrapper__img" src="#" width="" height="" alt="презентация">
     </section>
     <section class="reviews">
       <div class="rewiews__item">

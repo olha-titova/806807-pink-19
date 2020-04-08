@@ -1,0 +1,17 @@
+.page{
+  &__title-wrapper {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 171px;
+}
+ &__description {
+   background-color: #ffffff;
+   font-size: 14px;
+   line-height: 30px;
+   color: #283645;
+   text-align: center;
+   margin: 0;
+   padding: 56px 40px;
+ }
+}
