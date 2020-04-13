@@ -1,0 +1,21 @@
+@import "../general/mixins.scss";
+
+.page__title-wrapper {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 171px;
+}
+
+.page__description {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 56px 40px;
+
+  @include text-options(14px, 300, 30px, #283645);
+}
+
+.page-header {
+  background-color: #283645;
+}
