@@ -1,0 +1,11 @@
+.site-list__item {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.site-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include text-options(18px, 600, 32px, #ffffff);
+}

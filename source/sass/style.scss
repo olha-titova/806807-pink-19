@@ -1,4 +1,7 @@
-
+@import "./general/normalize";
+@import "./general/fonts";
+@import "./general/general";
+@import "./general/mixins";
 @import "./blocks/main-nav";
 @import "./blocks/title-wrapper";
 @import "./blocks/links";
@@ -6,7 +9,6 @@
 @import "./blocks/page";
 @import "./blocks/rewiew-list";
 @import "./blocks/footer";
-@import "./general/fonts";
-@import "./general/mixins";
-@import "./general/normalize";
-@import "./general/general";
+@import "./blocks/site-list";
+@import "./blocks/main-header";
+@import "./blocks/page-header";
