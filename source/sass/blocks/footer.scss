@@ -1,0 +1,18 @@
+.footer__logo {
+  margin: 40px 87px 43px 86px;
+}
+
+.footer__social-links {
+  list-style: none;
+  display: flex;
+  padding: 0 75px 41px 73px;
+}
+
+.footer__developer {
+  margin: 0;
+  display: flex;
+  text-decoration: none;
+
+  @include text-options(14px, 500, 18px, #283645);
+  padding: 0 96px 40px 96px;
+}

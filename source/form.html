@@ -4,28 +4,32 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="#" width="" height="" alt="pink">
+    <nav>
+      <div class="main-nav">
+      <a class="main-nav__logo" href="#">
+      <img class="main-nav__logo-image" src="#" width="" height="" alt="pink">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Раскрыть меню</button>
+      <button class="main-nav__toggle" type="button">Раскрыть меню </button>
+    </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="#">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -85,32 +89,30 @@
     </form>
   </main>
   <footer>
-    <a class="footer-logo" href="index.html">
+    <a class="footer__logo" href="index.html">
       <img src="#" width="" height="" alt="логотип">
     </a>
-    <ul class="social-links">
+    <ul class="footer__social-links">
       <li>
-        <a class="social-links__link" href="#">
+        <a class="footer__social-links--item" href="#">
           <img src="#" width="" height="" alt="твиттер">
         </a>
       </li>
       <li>
-        <a class="social-links__link" href="#">
+        <a class="footer__social-links--item" href="#">
           <img src="#" width="" height="" alt="фэйсбук">
         </a>
       </li>
       <li>
-        <a class="social-links__link" href="#">
+        <a class="footer__social-links--item" href="#">
           <img src="#" width="" height="" alt="ютуб">
         </a>
       </li>
     </ul>
-    <div>
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
         <p>Разработано</p>
         <img src="#" width="" height="" alt="логотип htmlacademy">
       </a>
-    </div>
   </footer>
 </body>
 
