@@ -1,0 +1,27 @@
+.contacts {
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 44px;
+
+  @include text-options(24px, 300, normal, #283645);
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 11px;
+
+  @include text-options(18px, 600, normal, #283645);
+}
+
+.contacts__data {
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 27px;
+  display: block;
+
+  @include text-options(24px, 300, normal, #d22856);
+}

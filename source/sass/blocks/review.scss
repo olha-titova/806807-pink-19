@@ -1,23 +1,23 @@
-.rewiew__item {
+.review__item {
   padding: 0 33px 20px 37px;
   background-color: #f2f2f2;
   margin: 0 20px 20px 20px;
 }
 
-.rewiew__img {
+.review__img {
   width: 100%;
   display: block;
   margin-bottom: 25px;
 }
 
-.rewiew__name {
+.review__name {
   display: inline;
   margin: 0;
 
   @include text-options(14px, 500, 24px, #283645);
 }
 
-.rewiew__time {
+.review__time {
   margin: 0;
   display: inline;
   text-transform: uppercase;
@@ -25,23 +25,23 @@
   @include text-options(12px, 300, 24px, #283645);
 }
 
-.rewiew__text {
+.review__text {
   margin: 0;
   margin-bottom: 20px;
 
   @include text-options(12px, 300, 24px, #283645);
 }
 
-.rewiew__like {
+.review__like {
   display: inline;
   text-decoration: none;
 }
 
-.rewiew__like-btn {
+.review__like-btn {
   margin-right: 20px;
 }
 
-.rewiew__quantity {
+.review__quantity {
   margin: 0;
   display: inline;
   color: #d22856;

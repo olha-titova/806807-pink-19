@@ -1,0 +1,57 @@
+.editor {
+  background-color: #f2f2f2;
+}
+
+.editor__img {
+  padding: 20px 0;
+}
+
+.editor__title {
+  text-align: center;
+  padding: 0 0 48px 0;
+  background-color: #ffffff;
+
+  @include text-options(14px, normal, 30px, #283645);
+}
+
+.editor__filter {
+  padding: 0 0 40px 0;
+}
+
+.editor__filter-label {
+  width: 44px;
+  height: 44px;
+  margin-right: 40px;
+}
+
+.editor__range {
+  margin: 0 auto 30px;
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid #dddfe0;
+}
+
+.editor__btn-wrapper {
+  text-align: center;
+  padding: 0 0 40px 0;
+}
+
+.editor__btn {
+  background-color: #f2f2f2;
+  min-width: 280px;
+  outline: none;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 0 auto 12px;
+
+  &--submit {
+    border: solid 3px #d22856;
+
+    @include text-options(18px, 600, 18px, #d22856);
+  }
+
+  &--reset {
+    border: solid 3px rgba(40, 54, 69, 0.1);
+    color: rgba(40, 54, 69, 0.1);
+  }
+}
