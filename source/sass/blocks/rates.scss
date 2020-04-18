@@ -44,3 +44,27 @@
 
   @include text-options(14px, 300, 30px, #283645);
 }
+
+.rates__buttons {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0 0 127px 0;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.rates__buttons-item {
+  margin: 0;
+  margin-right: 19px;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #283645;
+
+  &--active {
+    border: none;
+    border-radius: 50%;
+    margin-right: 19px;
+  }
+}

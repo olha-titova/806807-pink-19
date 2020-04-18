@@ -3,21 +3,6 @@
   flex-direction: column;
   padding: 0 22px 20px 22px;
 
-  &--legend {
-    text-transform: uppercase;
-    padding: 41px 0 30px 0;
-    text-align: center;
-
-    @include text-options(14px, 600, 18px, #d22856);
-  }
-
-  &--row {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding: 0 0 47px 0;
-  }
-
   &--checkbox {
     background-color: #e5e5e5;
   }
@@ -31,17 +16,24 @@
     text-align: center;
   }
 
-  &--textarea {
-    border: solid 2px #e5e5e5;
-    padding: 23px 28px 0 19px;
-    min-height: 197px;
-
-    @include text-options(18px, normal, 30px, #283645);
-  }
-
   &--btn {
     text-align: center;
   }
+}
+
+.contest-form__block-legend {
+  text-transform: uppercase;
+  padding: 41px 0 30px 0;
+  text-align: center;
+
+  @include text-options(14px, 600, 18px, #d22856);
+}
+
+.contest-form__block-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 0 0 47px 0;
 }
 
 .contest-form__label {
@@ -111,4 +103,12 @@
   text-transform: uppercase;
 
   @include text-options(14px, normal, 30px, #283645);
+}
+
+.contest-form__textarea {
+  border: solid 2px #e5e5e5;
+  padding: 23px 28px 0 19px;
+  min-height: 197px;
+
+  @include text-options(18px, normal, 30px, #283645);
 }
