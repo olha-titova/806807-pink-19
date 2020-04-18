@@ -1,0 +1,37 @@
+.reviews {
+  background-color: #ffffff;
+  padding-top: 49px;
+  text-align: center;
+}
+
+.reviews__item-name {
+  margin-bottom: 21px;
+
+  @include text-options(18px, 600, 30px, #000000);
+}
+
+.reviews__item-text {
+  margin: 0;
+  padding: 0 22px 42px 22px;
+
+  @include text-options(14px, 300, 30px, #283645);
+}
+
+.reviews__buttons {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0 0 127px 0;
+  justify-content: center;
+}
+
+.reviews__buttons-item {
+  margin-right: 19px;
+  border-radius: 20px;
+
+  &--active {
+    border: solid;
+    border-radius: 20px;
+    margin-right: 19px;
+  }
+}

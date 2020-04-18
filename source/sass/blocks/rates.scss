@@ -1,0 +1,70 @@
+.rates {
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.rates__wrapper {
+  transform: translate(-33.3%);
+  width: 300%;
+}
+
+.rates__table {
+  width: 100%;
+  border-collapse: collapse;
+  word-break: break-all;
+  margin: 0;
+  border: 2px solid #e5e5e5;
+}
+
+.rates__table-wrapper {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.rates__table-title {
+  background-color: #283645;
+  min-width: 276px;
+  text-transform: uppercase;
+  padding: 13px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+
+  @include text-options(18px, 600, 30px, #ffffff);
+
+  &--price {
+    @include text-options(24px, 300, 30px, #ffffff);
+  }
+}
+
+.rates__table-cell {
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+  padding: 13px;
+
+  @include text-options(14px, 300, 30px, #283645);
+}
+
+.rates__buttons {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0 0 127px 0;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.rates__buttons-item {
+  margin: 0;
+  margin-right: 19px;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #283645;
+
+  &--active {
+    border: none;
+    border-radius: 50%;
+    margin-right: 19px;
+  }
+}
