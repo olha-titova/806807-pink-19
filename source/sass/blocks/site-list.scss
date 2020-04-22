@@ -1,6 +1,9 @@
 .site-list__item {
-  margin-bottom: 26px;
+  width: 100%;
+  padding: 15px 0;
   text-align: center;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000;
 }
 
 .site-list__link {
