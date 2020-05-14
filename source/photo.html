@@ -12,9 +12,7 @@
   <header class="page-header">
     <nav>
       <div class="main-nav">
-      <a class="main-nav__logo" href="#">
-      <img class="main-nav__logo-image" src="#" width="" height="" alt="pink">
-    </a>
+      <a class="main-nav__logo" href="#"></a>
       <button class="main-nav__toggle" type="button">M</button>
     </div>
       <div class="main-nav__wrapper">
@@ -37,16 +35,16 @@
   </header>
   <main class="page">
     <div class="page__title-wrapper">
-      <h1>Фотографии пользователей</h1>
+      <p class="page__title">Фотографии пользователей</p>
     </div>
     <p class="page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <section>
       <ul class="page__review-list">
-        <li class="review">
+        <li class="review review-main">
           <a class="review__img" href="#">
             <img src="#" width="" height="" alt="панорама дня">
           </a>
-          <div class="review__item">
+          <div class="review__item review__item-main">
           <b class="review__name">Анна</b>
           <p class="review__time">(5 минут назад)</p>
           <p class="review__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -144,9 +142,11 @@
     </section>
     <form class="editor">
       <p class="editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="editor__wrapper">
       <div class="editor__img">
         <img src="#" width="" height="" alt="выбрать фото">
       </div>
+      <div class="editor__filter-wrapper">
       <div class="editor__filter">
         <label class="editor__filter-label" for="framing">
           <span class="visually-hidden">Кадрирование</span>
@@ -171,6 +171,8 @@
         <button class="editor__btn editor__btn--submit" type="submit">Запостить</button>
         <button class="editor__btn editor__btn--reset" type="reset">Отмена</button>
       </div>
+    </div>
+  </div>
     </form>
   </main>
   <footer>

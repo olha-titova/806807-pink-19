@@ -12,9 +12,7 @@
   <header class="page-header">
     <nav>
       <div class="main-nav">
-        <a class="main-nav__logo" href="#">
-          <img class="main-nav__logo-image" src="#" width="" height="" alt="pink">
-        </a>
+        <a class="main-nav__logo" href="#"></a>
         <button class="main-nav__toggle" type="button">M</button>
       </div>
       <div class="main-nav__wrapper">
@@ -36,44 +34,67 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="title-wrapper">
-      <h1>Взгляните на жизнь иначе!</h1>
-      <img class="title-wrapper__img" src="#" width="" height="" alt="презентация">
-    </div>
-    <section class="links">
-      <a class="links__download" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
-      <div class="links__list">
-        <a class="links__list-item" href="#">
-          <img src="#" width="" height="" alt="apple">
-        </a>
-        <a class="links__list-item" href="#">
-          <img src="#" width="" height="" alt="android">
-        </a>
-        <a class="links__list-item" href="#">
-          <img src="#" width="" height="" alt="windows">
-        </a>
+    <div class="links-wrapper">
+      <div class="title-wrapper">
+        <h1>Взгляните на жизнь иначе!</h1>
       </div>
-      <p class="links__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8s</p>
-    </section>
+      <section class="links">
+        <a class="links__download" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
+        <ul class="links__list">
+          <li>
+            <a class="links__list-item links__list-item--apple" href="#apple-store"></a>
+          </li>
+          <li>
+            <a class="links__list-item links__list-item--android" href="#play-market"></a>
+          </li>
+          <li>
+            <a class="links__list-item links__list-item--windows" href="#win-store"></a>
+          </li>
+        </ul>
+        <p class="links__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8s</p>
+      </section>
+    </div>
     <section class="advantages">
       <div class="advantages__text">
         <p class="advantages__text-item">Устали от серости мегаполиса?</p>
-        <p class="advantages__text-item"> Нам есть, что вам предложить!</p>
+        <p class="advantages__text-item advantages__text-item--second"> Нам есть, что вам предложить!</p>
       </div>
-      <div class="advantages__list">
-        <p class="advantages__title">Поднимает настроение</p>
-        <p class="advantages__item"> Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-          кликов!</p>
-        <p class="advantages__title">Меняет мир вокруг</p>
-        <p class="advantages__item"> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-          эффект</p>
-        <p class="advantages__title">Заводит новых друзей</p>
-        <p class="advantages__item">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      <div class="advantages__wrapper">
+        <div class="advantages__list">
+          <div class="advantages__list-item advantages__list-item--first-screen">
+            <p class="advantages__title">Поднимает настроение</p>
+            <p class="advantages__item"> Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько
+              кликов!</p>
+          </div>
+          <div class="advantages__list-item advantages__list-item--second-screen">
+            <p class="advantages__title">Меняет мир вокруг</p>
+            <p class="advantages__item"> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              эффект</p>
+          </div>
+          <div class="advantages__list-item advantages__list-item--third-screen">
+            <p class="advantages__title">Заводит новых друзей</p>
+            <p class="advantages__item">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </div>
+        </div>
+        <img class="advantages__img" src="#" width="" height="" alt="презентация">
       </div>
-      <img class="advantages__img" src="#" width="" height="" alt="презентация">
+    </section>
+    <section class="timer">
+      <img class="timer__img" src="#" width="" height="" alt="таймер">
+      <div class="timer__text-wrapper">
+        <p class="timer__title">Эффект на 24 часа!</p>
+        <p class="timer__text">Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится
+          целые сутки!</p>
+        <a class="timer__link" href="#">Узнать больше об исследовании</a>
+      </div>
     </section>
     <section class="reviews">
       <div class="reviews__item">
+        <p class="rewiews__text-hidden">25 лет, водитель трамвая</p>
         <b class="reviews__item-name"> Николай Петров</b>
         <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
           серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -96,28 +117,34 @@
     <section class="rates">
       <div class="rates__wrapper">
         <table class="rates__table">
-          <tbody class="rates__table-wrapper">
-            <tr>
-              <th class="rates__table-title"></th>
-              <th class="rates__table-title">Стандарт <br><span class="rates__table-title--price">3,99 USD</span></th>
-              <th class="rates__table-title"></th>
-            </tr>
-            <tr>
-              <td class="rates__table-cell">Ячейка 1</td>
-              <td class="rates__table-cell rates__table-cell--yes">Розовый фильтр</td>
-              <td class="rates__table-cell">Ячейка 3</td>
-            </tr>
-            <tr>
-              <td class="rates__table-cell">Ячейка 2</td>
-              <td class="rates__table-cell rates__table-cell--yes">Смайлики</td>
-              <td class="rates__table-cell">Ячейка 11</td>
-            </tr>
-            <tr>
-              <td class="rates__table-cell">Ячейка 11</td>
-              <td class="rates__table-cell rates__table-cell--no">Комментарии</td>
-              <td class="rates__table-cell">Ячейка 11</td>
-            </tr>
-          </tbody>
+            <thead>
+              <tr>
+                <th class="rates__table-title rates__table-title--empty"></th>
+                <th class="rates__table-title">Стандарт <br><span class="rates__table-title--price">3,99 USD</span></th>
+                <th class="rates__table-title">База <br><span class="rates__table-title--price">1,99 USD</span></th>
+                <th class="rates__table-title">Анлим <br><span class="rates__table-title--price">9,99 USD</span></th>
+              </tr>
+              </thead>
+              <tbody class="rates__table-wrapper">
+                <tr>
+                  <td class="rates__table-cell">Розовый фильтр</td>
+                  <td class="rates__table-cell rates__table-cell--yes">Розовый фильтр</td>
+                  <td class="rates__table-cell rates__table-cell--yes">Розовый фильтр</td>
+                  <td class="rates__table-cell rates__table-cell--yes">Розовый фильтр</td>
+                </tr>
+                <tr>
+                  <td class="rates__table-cell">Смайлики</td>
+                  <td class="rates__table-cell rates__table-cell--no">Смайлики</td>
+                  <td class="rates__table-cell rates__table-cell--yes">Смайлики</td>
+                  <td class="rates__table-cell rates__table-cell--yes">Смайлики</td>
+                </tr>
+                <tr>
+                  <td class="rates__table-cell">Комментарии</td>
+                  <td class="rates__table-cell rates__table-cell--no">Комментарии</td>
+                  <td class="rates__table-cell rates__table-cell--no">Комментарии</td>
+                  <td class="rates__table-cell rates__table-cell--yes">Комментарии</td>
+                </tr>
+              </tbody>
         </table>
       </div>
       <ul class="rates__buttons">
@@ -134,16 +161,50 @@
       </ul>
     </section>
     <section class="contacts">
-      <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+      <p class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</p>
+      <div class="contacts__wrapper">
+      <div class="contacts__call">
       <p class="contacts__text">Звоните:</p>
       <a class="contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="contacts__write">
       <p class="contacts__text">Пишите:</p>
       <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__adress">
       <p class="contacts__text">Приезжайте в гости:</p>
-      <a class="contacts__data" href="#">ул. Большая Конюшенная, 19/8</a>
+      <a class="contacts__data" href="#">ул. Большая<br> Конюшенная, 19/8</a>
+      </div>
+    </div>
     </section>
     <div class="main__map"> </div>
   </main>
+  <footer class="index__footer">
+    <a class="footer__logo" href="index.html">
+      <img src="#" width="" height="" alt="логотип">
+    </a>
+    <ul class="footer__social-links">
+      <li>
+        <a class="footer__social-link" href="#">
+          <img src="#" width="" height="" alt="твиттер">
+        </a>
+      </li>
+      <li>
+        <a class="footer__social-link" href="#">
+          <img src="#" width="" height="" alt="фэйсбук">
+        </a>
+      </li>
+      <li>
+        <a class="footer__social-link" href="#">
+          <img src="#" width="" height="" alt="ютуб">
+        </a>
+      </li>
+    </ul>
+    <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
+      <p>Разработано</p>
+      <img src="#" width="" height="" alt="логотип htmlacademy">
+    </a>
+  </footer>
 </body>
 
 </html>

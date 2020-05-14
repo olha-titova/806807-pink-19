@@ -25,3 +25,57 @@
 
   @include text-options(24px, 300, normal, #d22856);
 }
+
+@media (min-width: 660px) {
+  .contacts__title {
+    margin: 0 auto;
+    padding-bottom: 57px;
+
+    @include text-options(40px, 300, normal, #283645);
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__call {
+    margin: 0 auto;
+    min-width: 40%;
+  }
+
+  .contacts__adress {
+    margin: 0 auto;
+    min-width: 40%;
+  }
+
+  .contacts__write {
+    min-width: 40%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__title {
+    padding-bottom: 70px;
+  }
+
+  .contacts__call {
+    margin: 0 auto;
+    min-width: 250px;
+    order: 1;
+  }
+
+  .contacts__adress {
+    margin: 0 auto;
+    min-width: 250px;
+    order: 2;
+  }
+
+  .contacts__write {
+    min-width: 250px;
+    margin: 0 auto;
+    order: 3;
+  }
+}
