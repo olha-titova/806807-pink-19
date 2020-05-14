@@ -1,0 +1,64 @@
+.timer {
+  display: flex;
+}
+
+.timer__title {
+  @include text-options(30px, 600, 36px, #000000);
+}
+
+.timer__text {
+  @include text-options(14px, 300, 24px, #283645);
+}
+
+.timer__link {
+  text-decoration: none;
+
+  @include text-options(14px, 300, 24px, #d22856);
+}
+
+.timer__text-wrapper {
+  max-width: 300px;
+  padding: 0 35px 100px 0;
+}
+
+.timer__img {
+  min-width: 238px;
+  padding: 0 70px 100px 20px;
+}
+
+@media (max-width: 660px) {
+  .timer {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .timer {
+    background-color: #f2f2f2;
+  }
+
+  .timer__img {
+    min-width: 298px;
+    padding: 0 67px 0 131px;
+  }
+
+  .timer__title {
+    @include text-options(30px, 600, 30px, #000000);
+  }
+
+  .timer__text {
+    @include text-options(18px, 300, 30px, #283645);
+    padding: 0 101px 0 0;
+  }
+
+  .timer__link {
+    text-decoration: none;
+
+    @include text-options(18px, 300, 30px, #d22856);
+  }
+
+  .timer__text-wrapper {
+    max-width: 100%;
+    padding: 0 179px 0 0;
+  }
+}

@@ -12,9 +12,7 @@
   <header class="page-header">
     <nav>
       <div class="main-nav">
-        <a class="main-nav__logo" href="#">
-          <img class="main-nav__logo-image" src="#" width="" height="" alt="pink">
-        </a>
+        <a class="main-nav__logo" href="#"></a>
         <button class="main-nav__toggle" type="button">M</button>
       </div>
       <div class="main-nav__wrapper">
@@ -37,23 +35,30 @@
   </header>
   <main class="page">
     <div class="page__title-wrapper">
-      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="page__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </div>
     <p class="page__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
       бонусную карту! Пожалуйста, заполните форму ниже:</p>
     <form class="contest-form" action="https://echo.htmlacademy.ru">
       <div class="contest-form__block contest-form__block--name">
+        <div class="contest-form__block--name-wrapper">
         <label class="contest-form__label contest-form__label--text" for="surname">Фамилия: </label>
         <input class="contest-form__input contest-form__input--text" placeholder="Укажите фамилию *" type="text"
           name="surname" id="surname" required>
+        </div>
+        <div class="contest-form__block--name-wrapper">
         <label class="contest-form__label contest-form__label--text" for="name">Имя:</label>
         <input class="contest-form__input contest-form__input--text" placeholder="Введите ваше имя *" type="text"
           name="name" id="name" required>
+        </div>
+        <div class="contest-form__block--name-wrapper">
         <label class="contest-form__label contest-form__label--text" for="middle-name">Отчество:</label>
         <input class="contest-form__input contest-form__input--text" placeholder="Ну и отчество тоже" type="text"
           name="middle-name" id="middle-name">
+        </div>
       </div>
       <div class="contest-form__block contest-form__block--checkbox">
+        <div class="contest-form__block--checkbox-wrapper">
         <legend class="contest-form__block-legend">Ваши безбашенные достижения в путешествии</legend>
         <div class="contest-form__block-row">
           <label class="contest-form__label contest-form__label--checkbox" for="shark">Сделал селфи с акулой </label>
@@ -86,15 +91,22 @@
             value="hotel">
         </div>
       </div>
+    </div>
       <div class="contest-form__block contest-form__block--contacts">
+        <p class="contest-form__block-legend">Контактная информация</p>
+        <div class="contest-form__block--contacts-tel">
         <label class="contest-form__label contest-form__label--text" for="tel">Номер телефона </label>
-        <input class="contest-form__input contest-form__input--tel" placeholder="Номер, пожалуйста" type="tel" id="tel"
+        <input class="contest-form__input  contest-form__input--tel" placeholder="Номер, пожалуйста" type="tel" id="tel"
           name="tel">
+        </div>
+        <div class="contest-form__block--contacts-email">
         <label class="contest-form__label contest-form__label--text" for="email">адрес почты</label>
         <input class="contest-form__input contest-form__input--email" placeholder="Введите почту *" type="email"
           name="email" id="email" required>
       </div>
+    </div>
       <div class="contest-form__block contest-form__block--radio">
+        <div class="contest-form__block--radio-wrapper">
         <legend class="contest-form__block-legend">С каким приложением путешествовали?</legend>
         <div class="contest-form__block-row">
           <label class="contest-form__label contest-form__label--radio" for="ios">Pink для iOS </label>
@@ -109,6 +121,7 @@
           <label class="contest-form__label contest-form__label--radio" for="win">Windows Phone </label>
           <input class="contest-form__input contest-form__input--radio" type="radio" id="win" name="app" value="win">
         </div>
+      </div>
       </div>
       <div class="contest-form__block contest-form__block--emotions">
         <legend class="contest-form__block-legend">Опишите свои эмоции</legend>

@@ -12,7 +12,7 @@
   margin: 0;
   display: flex;
   text-decoration: none;
+  padding: 0 96px 40px 96px;
 
   @include text-options(14px, 500, 18px, #283645);
-  padding: 0 96px 40px 96px;
 }

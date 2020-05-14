@@ -1,4 +1,19 @@
 .title-wrapper {
-  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("/img/iphone-hand-mobile@1x.png"),
+    url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center, center;
+  background-size: auto, cover;
   padding: 0 0 28px 0;
+  min-height: 400px;
+}
+
+@media (min-width: 660px) {
+  .title-wrapper {
+    position: absolute;
+    background-image: initial;
+  }
+}
+
+@media (min-width: 1200px) {
 }

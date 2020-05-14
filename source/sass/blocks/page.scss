@@ -1,8 +1,17 @@
 .page__title-wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: auto;
+  background-size: cover, auto;
   background-repeat: no-repeat;
-  height: 171px;
+  background-position: center, bottom;
+  min-height: 175px;
+}
+
+.page__title {
+  margin: 0;
+  padding: 36px 46px;
+  text-align: center;
+
+  @include text-options(24px, 300, normal, #ffffff);
 }
 
 .page__description {
@@ -18,4 +27,64 @@
   list-style: none;
   margin: 0;
   padding: 0 0 10px 0;
+}
+
+@media (min-width: 660px) {
+  .page__title {
+    margin: 0;
+    padding: 83px 93px;
+    text-align: center;
+
+    @include text-options(50px, 300, normal, #ffffff);
+  }
+
+  .page__title-wrapper {
+    min-height: 330px;
+  }
+
+  .page__description {
+    padding: 100px 86px;
+    margin: 0 auto;
+
+    @include text-options(18px, normal, 30px, #283645);
+  }
+
+  .page__review-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .review {
+    width: 300px;
+  }
+
+  .review-main {
+    min-width: 660px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page__title-wrapper {
+    min-height: 284px;
+  }
+
+  .page__title {
+    margin: 0 auto;
+    padding: 73px 0;
+  }
+
+  .page__description {
+    max-width: 571px;
+  }
+
+  .page__review-list {
+    padding: 0 130px;
+  }
+
+  .review__item-main {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }

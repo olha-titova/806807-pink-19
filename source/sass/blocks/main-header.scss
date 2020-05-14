@@ -3,14 +3,35 @@
   justify-content: space-between;
 }
 
-.main-nav__logo-image {
-  width: 75px;
-  height: 22px;
-  padding: 22px 0 25px 20px;
+.main-nav__logo {
+  background-image: url("/img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  padding: 20px;
 }
 
 .main-nav__toggle {
   width: 24px;
   height: 23px;
   margin: 21px 19px 25px 0;
+}
+
+@media (min-width: 660px) {
+  .main-nav__logo {
+    background-image: url("/img/logo-pink-white-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    padding: 20px;
+    min-width: 130px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__logo {
+    background-image: url("/img/logo-pink-white-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    padding: 20px;
+    min-width: 130px;
+  }
 }
