@@ -67,12 +67,13 @@
       url("/img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, center, center;
+    background-size: auto, cover;
     padding: 0 20px;
     position: relative;
   }
 
   .links {
-    padding: 307px 0 112px 0;
+    padding: 307px 0 112px 20px;
     background-color: initial;
     position: relative;
     max-width: 300px;
@@ -87,6 +88,28 @@
 
 @media (min-width: 660px) {
   .links {
-    padding: 307px 0 112px 120px;
+    padding: 307px 0 112px 20px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .links {
+    padding: 420px 0 50px 120px;
+  }
+  .links__text {
+    @include text-options(18px, small, 24px, #ffffff);
+  }
+  .links__download {
+    margin-bottom: 75px;
+  }
+  .links__list {
+    padding-bottom: 60px;
+  }
+  .links__text {
+    padding: 0px 0 50px 0;
+  }
+  .links-wrapper {
+    background-size: 800px, cover;
   }
 }

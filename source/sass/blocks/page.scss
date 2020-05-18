@@ -67,16 +67,21 @@
 
 @media (min-width: 1200px) {
   .page__title-wrapper {
-    min-height: 284px;
+    min-height: 395px;
   }
 
   .page__title {
     margin: 0 auto;
-    padding: 73px 0;
+    padding: 160px 0 0 0;
+    max-width: 385px;
+    &--form {
+      max-width: 100%;
+      padding: 160px 125px 0;
+    }
   }
 
   .page__description {
-    max-width: 571px;
+    padding: 100px 115px 65px;
   }
 
   .page__review-list {
