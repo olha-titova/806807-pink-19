@@ -13,3 +13,22 @@
 
   @include text-options(18px, 600, 32px, #ffffff);
 }
+
+@media (min-width: 1200px) {
+   .site-list {
+     display: flex;
+     flex-direction: row;
+     width: auto;
+   }
+
+  .site-list__link {
+    text-transform: none;
+
+    @include text-options(18px, 300, 18px, #ffffff);
+  }
+  .site-list__item {
+    border: none;
+    width: auto;
+    margin-right: 82px;
+  }
+}

@@ -6,6 +6,7 @@
   background-size: 101% auto;
   background-position: 50% 0;
   background-color: #f2f2f2;
+  margin: 0 auto;
 }
 
 .rates__wrapper {
@@ -34,6 +35,7 @@
   padding: 13px;
   box-sizing: border-box;
   border: 2px solid #e5e5e5;
+  color: #ffffff;
 
   &--empty {
     background-color: #f2f2f2;
@@ -51,7 +53,7 @@
 .rates__table-cell {
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
-  padding: 13px;
+  padding: 12px;
 
   @include text-options(14px, 300, 30px, #283645);
 }
@@ -100,12 +102,34 @@
       line-height: 0;
     }
   }
+  .rates__table-title {
+    min-width: 152px;
+
+    @include text-options(16px, 600, 30px, #ffffff);
+
+  &--price {
+    @include text-options(18px, 300, 30px, #ffffff);
+  }
+}
+  .rates__wrapper {
+    width: 608px;
+    transform: none;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+  .rates {
+    padding: 75px 0;
+  }
+  .rates__buttons {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
   .rates__wrapper {
     width: 940px;
     transform: none;
+    margin: 0 auto;
   }
 
   .rates {
@@ -118,5 +142,8 @@
 
   .rates__table {
     margin-bottom: 98px;
+  }
+  .rates__table-title {
+    min-width: 233px;
   }
 }
