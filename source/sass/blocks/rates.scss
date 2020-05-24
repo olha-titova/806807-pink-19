@@ -19,7 +19,6 @@
   border-collapse: collapse;
   word-break: break-all;
   margin: 0;
-  border: 2px solid #e5e5e5;
 }
 
 .rates__table-wrapper {
@@ -102,24 +101,28 @@
       line-height: 0;
     }
   }
+
   .rates__table-title {
     min-width: 152px;
 
     @include text-options(16px, 600, 30px, #ffffff);
 
-  &--price {
-    @include text-options(18px, 300, 30px, #ffffff);
+    &--price {
+      @include text-options(18px, 300, 30px, #ffffff);
+    }
   }
-}
+
   .rates__wrapper {
     width: 608px;
     transform: none;
     margin: 0 auto;
     background-color: #ffffff;
   }
+
   .rates {
     padding: 75px 0;
   }
+
   .rates__buttons {
     display: none;
   }
