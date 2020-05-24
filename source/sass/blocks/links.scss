@@ -17,6 +17,7 @@
 
   @include text-options(18px, 600, 18px, #ffffff);
 }
+
 .links__download:hover {
   color: #d22856;
   background-color: #ffffff;
@@ -104,18 +105,17 @@
   }
 
   .links__text {
+    padding: 0px 0 50px 0;
+
     @include text-options(18px, small, 24px, #ffffff);
   }
+
   .links__download {
     margin-bottom: 75px;
   }
 
   .links__list {
     padding-bottom: 60px;
-  }
-
-  .links__text {
-    padding: 0px 0 50px 0;
   }
 
   .links-wrapper {
