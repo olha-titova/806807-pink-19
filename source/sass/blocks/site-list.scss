@@ -36,12 +36,12 @@
     text-transform: none;
 
     @include text-options(18px, 300, 18px, #ffffff);
+
     &--active {
       position: relative;
 
       &::after {
         content: "";
-
         position: absolute;
         right: 0;
         bottom: -3px;

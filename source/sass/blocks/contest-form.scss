@@ -10,10 +10,12 @@
   &--contacts {
     padding-top: 41px;
   }
+
   &--contacts-tel {
     display: flex;
     flex-direction: column;
   }
+
   &--contacts-email {
     display: flex;
     flex-direction: column;
@@ -78,6 +80,7 @@
 
     @include text-options(18px, normal, 30px, #283645);
   }
+
   &--checkbox::before {
     content: "";
     display: inline-block;
@@ -85,7 +88,7 @@
     width: 35px;
     height: 35px;
     margin-right: 31px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid #e5e5e5;
   }
 
@@ -107,7 +110,7 @@
     width: 35px;
     height: 35px;
     margin-right: 31px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
   }
@@ -353,13 +356,16 @@
     &--radio {
       transform: translate(5px, -2px);
     }
+
     &--contacts {
       transform: translate(5px, -35px);
     }
+
     &--checkbox {
       transform: translate(-20px, -32px);
       max-width: 440px;
     }
+
     &--emotions {
       transform: translate(10px, -33px);
       margin: 0 auto;
@@ -571,6 +577,7 @@
     margin: 0;
     width: 270px;
     margin-bottom: 50px;
+
     &--radio {
       margin: 0;
     }
