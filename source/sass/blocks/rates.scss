@@ -47,6 +47,25 @@
   &--price {
     @include text-options(24px, 300, 30px, #ffffff);
   }
+  &--hit {
+    position: relative;
+    overflow: hidden;
+  }
+  &--hit::before {
+    content: "Хит";
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(319deg);
+    background-color: #d22856;
+  }
 }
 
 .rates__table-cell {
@@ -110,6 +129,15 @@
     &--price {
       @include text-options(18px, 300, 30px, #ffffff);
     }
+    &--hit::before {
+      width: 94px;
+      height: 26px;
+      font-size: 14px;
+      line-height: 30px;
+      position: absolute;
+      top: 1px;
+      left: -20px;
+    }
   }
 
   .rates__wrapper {
@@ -149,5 +177,21 @@
 
   .rates__table-title {
     min-width: 233px;
+
+  &--hit::before {
+    content: "Хит";
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(319deg);
+    background-color: #d22856;
   }
+}
 }
