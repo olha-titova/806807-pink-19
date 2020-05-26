@@ -3,7 +3,9 @@
   padding-top: 49px;
   text-align: center;
 }
-
+.reviews-quotes {
+  display: none;
+}
 .reviews__item-name {
   margin-bottom: 21px;
 
@@ -53,11 +55,30 @@
     background-position: 50% 90px;
     background-size: 79px 63px;
     padding: 193px 0 35px 0;
+    display: flex;
+    justify-content: space-around;
   }
 
   .reviews__item {
     display: flex;
     flex-direction: column-reverse;
+    max-width: 700px;
+  }
+  .reviews-quotes {
+    display: block;
+    width: 22px;
+    height: 41px;
+  }
+
+  .rewiews-quotes__item {
+    opacity: 0.3;
+    outline: none;
+  }
+  .rewiews-quotes__item:hover {
+    opacity: 0.6;
+  }
+  .rewiews-quotes__item:focus, .rewiews-quotes__item:active {
+    opacity: 0.1;
   }
 
   .rewiews__text-hidden {

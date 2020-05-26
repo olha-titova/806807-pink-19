@@ -17,6 +17,7 @@
 }
 
 .timer__text-wrapper {
+  display: none;
   max-width: 300px;
   padding: 0 35px 100px 0;
 }
@@ -26,20 +27,58 @@
   padding: 0 70px 100px 20px;
 }
 
-@media (max-width: 660px) {
+@media (min-width: 660px) {
   .timer {
-    display: none;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+
+  }
+
+  .timer__img {
+    background-image: url("/img/icon-editor-diagram-fill.svg"), url("/img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 64%, 238px auto;
+    background-position: 40px 67px, 29% 15px;
+    position: relative;
+  }
+
+  .timer__img::before {
+    position: absolute;
+    content: "";
+    width: 181px;
+    height: 182px;
+    top: 81px;
+    left: 55px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+  .timer__img::after {
+    position: absolute;
+    content: "24";
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 700;
+    color: #d22856;
+    top: 119px;
+    left: 90px;
+}
+
+  .timer__text-wrapper {
+    padding: 24px 26px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
 }
 
 @media (min-width: 1200px) {
   .timer {
     background-color: #f2f2f2;
-  }
-
-  .timer__img {
-    min-width: 298px;
-    padding: 0 67px 0 131px;
+    min-height: 370px;
+    display: flex;
+    justify-content: center;
   }
 
   .timer__title {
@@ -58,7 +97,7 @@
   }
 
   .timer__text-wrapper {
-    max-width: 100%;
-    padding: 0 179px 0 0;
+    min-width: 568px;
+    padding: 0;
   }
 }
