@@ -2,12 +2,13 @@
   padding: 0 33px 20px 37px;
   background-color: #f2f2f2;
   margin: 0 20px 20px 20px;
-
 }
+
 .review__img {
   width: 100%;
   display: inline-flex;
 }
+
 .review__picture {
   width: 100%;
   display: block;
@@ -16,6 +17,7 @@
   &--item {
     width: 100%;
   }
+
   &--item-main {
     width: 100%;
   }
@@ -83,16 +85,42 @@
   .review__item {
     height: 125px;
     margin: 0 0 20px 0;
-    padding: 30px 52px 0px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 15px 20px 30px 20px;
 
     &--main {
       align-self: center;
-      padding: 0 20px;
+      padding: 30px 20px 0 20px;
       width: 580px;
       margin: 0 auto;
       margin-bottom: 50px;
+      position: relative;
     }
   }
+
+  .review__like {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row-reverse;
+
+    &--main {
+      position: absolute;
+      top: 33px;
+      right: 11px;
+    }
+  }
+
+  .review__like-btn {
+    background-image: url("/img/icon-heart.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    margin-left: 10px;
+  }
+
   .review__picture {
     margin: 0;
     width: 300px;
@@ -101,7 +129,6 @@
       width: 300px;
     }
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -109,6 +136,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .review__item {
     &--main {
       align-self: center;

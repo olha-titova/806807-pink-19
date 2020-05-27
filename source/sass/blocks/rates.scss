@@ -47,10 +47,12 @@
   &--price {
     @include text-options(24px, 300, 30px, #ffffff);
   }
+
   &--hit {
     position: relative;
     overflow: hidden;
   }
+
   &--hit::before {
     content: "Хит";
     width: 100px;
@@ -62,7 +64,7 @@
     left: -20px;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
     transform: rotate(319deg);
     background-color: #d22856;
   }
@@ -80,24 +82,45 @@
   margin: 0;
   list-style: none;
   display: flex;
-  padding: 0 0 127px 0;
+  padding: 40px 0 20px 0;
   justify-content: center;
   background-color: #f2f2f2;
 }
 
+.rates__buttons-wrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
 .rates__buttons-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
   margin: 0;
   margin-right: 19px;
   border-radius: 50%;
   width: 6px;
+  border: none;
   height: 6px;
   background-color: #283645;
+  opacity: 0.3;
+  box-sizing: content-box;
+  outline: none;
+}
 
-  &--active {
-    border: none;
-    border-radius: 50%;
-    margin-right: 19px;
-  }
+.rates__buttons-item:hover {
+  background-color: #283645;
+  opacity: 0.6;
+}
+
+.rates__buttons-item:focus,
+.rates__buttons-item:active {
+  background-color: #e2e2e2;
+  border: 3px solid #283645;
+  opacity: 1;
 }
 
 @media (min-width: 660px) {
@@ -129,6 +152,7 @@
     &--price {
       @include text-options(18px, 300, 30px, #ffffff);
     }
+
     &--hit::before {
       width: 94px;
       height: 26px;
@@ -178,20 +202,20 @@
   .rates__table-title {
     min-width: 233px;
 
-  &--hit::before {
-    content: "Хит";
-    width: 100px;
-    height: 30px;
-    font-size: 14px;
-    line-height: 30px;
-    position: absolute;
-    top: 5px;
-    left: -20px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    transform: rotate(319deg);
-    background-color: #d22856;
+    &--hit::before {
+      content: "Хит";
+      width: 100px;
+      height: 30px;
+      font-size: 14px;
+      line-height: 30px;
+      position: absolute;
+      top: 5px;
+      left: -20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      transform: rotate(319deg);
+      background-color: #d22856;
+    }
   }
-}
 }

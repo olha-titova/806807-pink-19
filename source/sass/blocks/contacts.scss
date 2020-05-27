@@ -26,16 +26,17 @@
 
   @include text-options(24px, 300, normal, #d22856);
 
-    &--mail:hover {
-  color: #283645;
-  text-decoration: underline;
+  &--mail:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &--mail:focus,
+  &--mail:active {
+    opacity: 30%;
+  }
 }
 
-    &--mail:focus,
-    &--mail:active {
-  opacity: 30%;
-}
-}
 @media (min-width: 660px) {
   .contacts__title {
     margin: 0 auto;

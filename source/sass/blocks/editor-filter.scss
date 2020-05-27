@@ -30,39 +30,43 @@
   opacity: 0.3;
 
   &--framing {
-   background-image: url("/img/icon-editor-crop.svg");
-   background-repeat: no-repeat;
-   background-size: 44px 44px;
+    background-image: url("/img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-size: 44px 44px;
   }
+
   &--fill {
-  background-image: url("/img/icon-editor-fill.svg");
-  background-repeat: no-repeat;
-  background-size: 48px 43px;
+    background-image: url("/img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 48px 43px;
   }
+
   &--filter {
-  background-image: url("/img/icon-editor-contrast.svg");
-  background-repeat: no-repeat;
-  background-size: 32px 32px;
+    background-image: url("/img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
   }
-}
-.editor__filter-label:hover {
-  opacity: 0.5;
-}
-.editor__filter-label {
-  &--framing:focus, &--framing:active {
+
+  &--framing:focus,
+  &--framing:active {
     background-image: url("/img/icon-editor-crop-pink.svg");
     outline: none;
-   }
-   &--fill:focus, &--fill:active {
-   background-image: url("/img/icon-editor-fill-pink.svg");
-   outline: none;
+  }
 
-   }
-   &--filter:focus {
-   background-image: url("/img/icon-editor-contrast-pink.svg");
-   outline: none;
-   }
+  &--fill:focus,
+  &--fill:active {
+    background-image: url("/img/icon-editor-fill-pink.svg");
+    outline: none;
+  }
 
+  &--filter:focus {
+    background-image: url("/img/icon-editor-contrast-pink.svg");
+    outline: none;
+  }
+}
+
+.editor__filter-label:hover {
+  opacity: 0.5;
 }
 
 .editor__range {
@@ -81,21 +85,23 @@
     right: 33px;
     background-color: #f2f2f2;
   }
-  &--item:focus, &--item:active {
+
+  &--item:focus,
+  &--item:active {
     background-color: #d22856;
     border-radius: 50%;
     outline: none;
-}
+  }
+
   &--hidden {
     display: none;
   }
-  }
+}
 
 .editor__range-scale {
   width: 240px;
   height: 2px;
   background-color: #283645;
-
 }
 
 .editor__btn-wrapper {
@@ -116,23 +122,30 @@
 
     @include text-options(18px, 600, 18px, #d22856);
   }
+
   &--submit:hover {
-     background-color: #d22856;
-     color: #ffffff;
+    background-color: #d22856;
+    color: #ffffff;
   }
-  &--submit:focus, &--submit:active {
+
+  &--submit:focus,
+  &--submit:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #d22856;
   }
+
   &--reset {
     border: solid 3px rgba(40, 54, 69, 0.1);
     color: rgba(40, 54, 69, 0.1);
   }
+
   &--reset:hover {
     color: rgba(40, 54, 69, 0.3);
     border: solid 3px rgba(40, 54, 69, 0.3);
   }
-  &--reset:focus, &--reset:active {
+
+  &--reset:focus,
+  &--reset:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: rgba(40, 54, 69, 0.3);
   }
@@ -176,21 +189,22 @@
     }
   }
 
-
   .editor__range {
     display: flex;
     flex-direction: column;
     margin-bottom: 74px;
 
-  &--fill {
-    right: 215px;
-  }
-  &--fiter {
-    right: 130px;
-  }
-  &--hidden {
-    display: block;
-  }
+    &--fill {
+      right: 215px;
+    }
+
+    &--fiter {
+      right: 130px;
+    }
+
+    &--hidden {
+      display: block;
+    }
   }
 
   .editor__btn-wrapper {
@@ -198,6 +212,7 @@
     flex-direction: column;
     padding: 0;
   }
+
   .editor__filter-label {
     width: 22px;
     height: 22px;
@@ -205,13 +220,15 @@
     opacity: 0.3;
 
     &--framing {
-     background-size: 22px 22px;
+      background-size: 22px 22px;
     }
+
     &--fill {
-    background-size: 24px 22px;
+      background-size: 24px 22px;
     }
+
     &--filter {
-    background-size: 16px 16px;
+      background-size: 16px 16px;
     }
   }
 }

@@ -25,6 +25,7 @@
 .social-links {
   display: flex;
   justify-content: center;
+  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -120,14 +121,14 @@
     justify-content: space-evenly;
     align-items: center;
   }
-}
 
-.social-links {
-  margin: 0;
-}
+  .social-links {
+    margin: 0;
+  }
 
-.footer__developer {
-  margin-bottom: 0;
+  .footer__developer {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -292,7 +292,7 @@
       width: 620px;
       position: relative;
       align-items: center;
-      padding: 0px 0px 5px 0;
+      padding: 0 0 5px 0;
       margin-bottom: 50px;
     }
 
@@ -362,8 +362,9 @@
     }
 
     &--checkbox {
-      transform: translate(-20px, -32px);
+      transform: translate(34px, -32px);
       max-width: 440px;
+      padding: 25px;
     }
 
     &--emotions {
@@ -379,7 +380,7 @@
   .contest-form__textarea {
     width: 500px;
     margin: 0 auto;
-    padding: 23px 0px 0 19px;
+    padding: 23px 0 0 19px;
   }
 
   .contest-form__input {
@@ -496,7 +497,7 @@
 
     &--checkbox {
       padding: 0;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       width: 940px;
     }
 
@@ -504,7 +505,7 @@
       justify-content: space-around;
       display: flex;
       flex-wrap: wrap;
-      padding: 52px 0px 5px 0px;
+      padding: 52px 0 5px 0;
       width: 100%;
       margin: 0 auto;
       margin-bottom: 69px;
@@ -552,7 +553,6 @@
       display: inline-block;
       transform: translate(30px, -97px);
       margin: 0 auto;
-      min-width: 561x;
       padding: 30px;
       position: absolute;
     }
@@ -560,13 +560,14 @@
     &--checkbox {
       display: inline-block;
       position: absolute;
-      transform: translate(60px, -63px);
+      transform: translate(13px, -63px);
+      padding: 0 25px;
     }
 
     &--emotions {
       display: inline-block;
       position: absolute;
-      transform: translate(330px, -54px);
+      transform: translate(340px, -54px);
       padding: 0 40px;
       margin: 0 auto;
     }
