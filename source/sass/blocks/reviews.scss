@@ -3,6 +3,13 @@
   padding-top: 49px;
   text-align: center;
 }
+
+.reviews__item {
+  &--hidden {
+    display: none;
+  }
+}
+
 .reviews-quotes {
   display: none;
 }
@@ -25,26 +32,64 @@
   display: flex;
   padding: 0 0 127px 0;
   justify-content: center;
-}
-
-.reviews__buttons-item {
   margin-right: 19px;
-  border-radius: 20px;
+  border-radius: 50%;
 
-  &--active {
-    border: solid;
-    border-radius: 20px;
-    margin-right: 19px;
+  &--label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 6px;
+    background-color: #283645;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  &--label:hover {
+    opacity: 0.6;
+  }
+
+  &--label:focus,
+  &--label:active {
+    border: 2px solid #000000;
+    opacity: 1;
+    background-color: #f2f2f2;
+    outline: none;
   }
 }
 
-.rewiews__text-hidden {
+.reviews__wrapper {
+  position: relative;
+  margin: 0 15px;
+}
+
+.reviews__text-hidden {
   display: none;
 }
 
 @media (min-width: 660px) {
   .reviews__buttons {
     padding: 0 0 20px 0;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__item-name {
+    margin-bottom: 5px;
+  }
+
+  .reviews__text-hidden {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .reviews__item--hidden {
+    display: none;
   }
 }
 
@@ -63,25 +108,33 @@
     display: flex;
     flex-direction: column-reverse;
     max-width: 700px;
+
+    &--hidden {
+      display: none;
+    }
   }
+
   .reviews-quotes {
     display: block;
     width: 22px;
     height: 41px;
   }
 
-  .rewiews-quotes__item {
+  .reviews-quotes__item {
     opacity: 0.3;
     outline: none;
   }
-  .rewiews-quotes__item:hover {
+
+  .reviews-quotes__item:hover {
     opacity: 0.6;
   }
-  .rewiews-quotes__item:focus, .rewiews-quotes__item:active {
+
+  .reviews-quotes__item:focus,
+  .reviews-quotes__item:active {
     opacity: 0.1;
   }
 
-  .rewiews__text-hidden {
+  .reviews__text-hidden {
     display: block;
 
     @include text-options(18px, 300, 30px, #283645);

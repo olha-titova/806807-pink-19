@@ -63,28 +63,46 @@
       <div class="advantages__wrapper">
         <div class="advantages__list">
           <div class="advantages__list-item advantages__list-item--first-screen">
-            <img class="advantages__img" src="/img/iphone-screen-1-desktop@1x.png" alt="поднимает настроение">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="/img/iphone-screen-1-desktop@1x.webp 1x, /img/iphone-screen-1-desktop@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="/img/iphone-screen-1-desktop@1x.jpg 1x, /img/iphone-screen-1-desktop@2x.jpg 2x">
+              <img class="advantages__img" src="//img/iphone-screen-1-desktop@1x.png" alt="поднимает настроение">
+            </picture>
             <p class="advantages__title">Поднимает настроение</p>
             <p class="advantages__item"> Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько
               кликов!</p>
           </div>
           <div class="advantages__list-item advantages__list-item--second-screen">
-            <img class="advantages__img" src="/img/iphone-screen-2-desktop@1x.png" alt="меняет мир">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="/img/iphone-screen-2-desktop@1x.webp 1x, /img/iphone-screen-2-desktop@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="/img/iphone-screen-2-desktop@1x.jpg 1x, /img/iphone-screen-2-desktop@2x.jpg 2x">
+              <img class="advantages__img" src="/img/iphone-screen-2-desktop@1x.png" alt="меняет мир">
+            </picture>
             <p class="advantages__title">Меняет мир вокруг</p>
             <p class="advantages__item"> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
               эффект</p>
           </div>
           <div class="advantages__list-item advantages__list-item--third-screen">
-            <img class="advantages__img" src="/img/iphone-screen-3-desktop@1x.png" alt="новые друзья">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="/img/iphone-screen-3-desktop@1x.webp 1x, /img/iphone-screen-3-desktop@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="/img/iphone-screen-3-desktop@1x.jpg 1x, /img/iphone-screen-3-desktop@2x.jpg 2x">
+              <img class="advantages__img" src="/img/iphone-screen-3-desktop@1x.png" alt="новые друзья">
+            </picture>
             <p class="advantages__title">Заводит новых друзей</p>
             <p class="advantages__item">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </div>
         </div>
         <picture class="advanteges__picture">
-            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x">
-            <img class="advanteges__picture--item" src="img/iphone-screen-mobile@1x.png" alt="всем привет">
+          <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x">
+          <img class="advanteges__picture--item" src="img/iphone-screen-mobile@1x.png" alt="всем привет">
         </picture>
       </div>
     </section>
@@ -100,8 +118,8 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews-quotes rewiews-quotes--left">
-        <svg class="rewiews-quotes__item rewiews-quotes__item--left" xmlns="http://www.w3.org/2000/svg"
+      <div class="reviews-quotes reviews-quotes--left">
+        <svg class="reviews-quotes__item reviews-quotes__item--left" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="21.706px"
           height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
           <path
@@ -109,13 +127,23 @@
         </svg>
       </div>
       <div class="reviews__item">
-        <p class="rewiews__text-hidden">25 лет, водитель трамвая</p>
+        <p class="reviews__text-hidden">25 лет, водитель трамвая</p>
         <b class="reviews__item-name"> Николай Петров</b>
         <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
           серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
+      <div class="reviews__item reviews__item--hidden">
+        <p class="reviews__text-hidden"></p>
+        <b class="reviews__item-name"> </b>
+        <p class="reviews__item-text"></p>
+      </div>
+      <div class="reviews__item reviews__item--hidden">
+        <p class="reviews__text-hidden"></p>
+        <b class="reviews__item-name"> </b>
+        <p class="reviews__item-text"></p>
+      </div>
       <div class="reviews-quotes reviews-quotes--right">
-        <svg class="rewiews-quotes__item rewiews-quotes__item--right" xmlns="http://www.w3.org/2000/svg"
+        <svg class="reviews-quotes__item reviews-quotes__item--right" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="21.706px"
           height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
           <path
@@ -123,17 +151,17 @@
         </svg>
       </div>
       <ul class="reviews__buttons">
-        <li>
-          <button class="reviews__buttons-item--active" type="radio" id="review" name="review" value="review"
-            checked><span class="visually-hidden">Отзыв 1</span></button>
+        <li class="reviews__wrapper">
+          <input class="reviews__buttons--input visually-hidden" type="radio" id="review" checked>
+          <label class="reviews__buttons--label reviews__buttons-item--active" for="review"></label>
         </li>
-        <li>
-          <button class="reviews__buttons-item" type="radio" id="review2" name="review2" value="review2"><span
-              class="visually-hidden">Отзыв 2</span></button>
+        <li class="reviews__wrapper">
+          <input class="reviews__buttons--input visually-hidden" type="radio" id="review2">
+          <label class="reviews__buttons--label reviews__buttons-item--active" for="review2"></label>
         </li>
-        <li>
-          <button class="reviews__buttons-item" type="radio" id="review3" name="review3" value="review3"><span
-              class="visually-hidden">Отзыв 3</span></button>
+        <li class="reviews__wrapper">
+          <input class="reviews__buttons--input visually-hidden" type="radio" id="review3">
+          <label class="reviews__buttons--label reviews__buttons-item--active" for="review"></label>
         </li>
       </ul>
     </section>
@@ -144,7 +172,8 @@
             <tr>
               <th class="rates__table-title rates__table-title--empty"></th>
               <th class="rates__table-title"> База<br><span class="rates__table-title--price">1,99 USD</span></th>
-              <th class="rates__table-title rates__table-title--hit">Стандарт <br><span class="rates__table-title--price">3,99 USD</span></th>
+              <th class="rates__table-title rates__table-title--hit">Стандарт <br><span
+                  class="rates__table-title--price">3,99 USD</span></th>
               <th class="rates__table-title">Анлим <br><span class="rates__table-title--price">9,99 USD</span></th>
             </tr>
           </thead>
@@ -171,15 +200,17 @@
         </table>
       </div>
       <ul class="rates__buttons">
-        <li>
-          <button class="rates__buttons-item" type="button"><span class="visually-hidden">Тариф 1</span></button>
+        <li class="rates__buttons--wrapper">
+          <input class="rates__buttons--input visually-hidden" type="radio" id="rate" checked>
+          <label class="rates__buttons--label reviews__buttons-item--active" for="rate"></label>
         </li>
-        <li>
-          <button class="rates__buttons-item" type="button" checked><span class="visually-hidden">Тариф
-              2</span></button>
+        <li class="rates__buttons--wrapper">
+          <input class="rates__buttons--input visually-hidden" type="radio" id="rate2">
+          <label class="rates__buttons--label reviews__buttons-item--active" for="rate2"></label>
         </li>
-        <li>
-          <button class="rates__buttons-item" type="button"><span class="visually-hidden">Тариф 3</span></button>
+        <li class="rates__buttons--wrapper">
+          <input class="rates__buttons--input visually-hidden" type="radio" id="rate3">
+          <label class="rates__buttons--label reviews__buttons-item--active" for="rate3"></label>
         </li>
       </ul>
     </section>

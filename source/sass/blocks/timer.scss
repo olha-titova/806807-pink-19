@@ -32,11 +32,11 @@
     display: flex;
     justify-content: center;
     padding: 30px 0 10px 0;
-
   }
 
   .timer__img {
-    background-image: url("/img/icon-editor-diagram-fill.svg"), url("/img/icon-timer.svg");
+    background-image: url("/img/icon-editor-diagram-fill.svg"),
+      url("/img/icon-timer.svg");
     background-repeat: no-repeat;
     background-size: 64%, 238px auto;
     background-position: 40px 67px, 29% 15px;
@@ -52,7 +52,7 @@
     left: 55px;
     background-color: #ffffff;
     border-radius: 50%;
-}
+  }
 
   .timer__img::after {
     position: absolute;
@@ -63,7 +63,7 @@
     color: #d22856;
     top: 119px;
     left: 90px;
-}
+  }
 
   .timer__text-wrapper {
     padding: 24px 26px;
