@@ -177,30 +177,56 @@
       <div class="editor__wrapper">
         <div class="editor__img">
 
-          <img src="#" width="" height="" alt="выбрать фото">
+          <picture class="editor__picture">
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x">
+              <img class="editor__picture--item" src="img/photo-road-mobile@1x.jpg" alt="выберите ваше фото">
+          </picture>
         </div>
         <div class="editor__filter-wrapper">
+          <div class="editor__filter--wrapper">
           <div class="editor__filter">
-            <label class="editor__filter-label" for="framing">
+            <label class="editor__filter-label editor__filter-label--framing" for="framing">
               <span class="visually-hidden">Кадрирование</span>
             </label>
             <input class="editor__filter-framing visually-hidden" type="radio" id="framing" name="filter"
               value="framing">
-            <label class="editor__filter-label">
+            <label class="editor__filter-label editor__filter-label--fill" for="fill">
               <span class="visually-hidden ">Заливка</span>
             </label>
             <input class="editor__filter-fill visually-hidden" type="radio" id="fill" name="filter" value="fill">
-            <label class="editor__filter-label">
+            <label class="editor__filter-label editor__filter-label--filter" for="filter">
               <span class="visually-hidden ">Контрастность</span>
             </label>
             <input class="editor__filter-contrast visually-hidden" type="radio" id="contrast" name="filter"
               value="contrast">
           </div>
+          <div class="editor__range--wrapper">
           <div class="editor__range">
-            <div class="editor__range-scale">
-              <div class="editor__range-bar"></div>
+              <div class="editor__range-scale"></div>
+              <div class="editor__range-bar">
+                <svg class="editor__range--item" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="253px" height="253px" viewBox="22.5 69.048 253 253" enable-background="new 22.5 69.048 253 253" xml:space="preserve">
+                  <path fill="#d22856" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+                </svg>
+              </div>
             </div>
-            <div class="editor__range-toggle"></div>
+            <div class="editor__range editor__range--hidden">
+              <div class="editor__range-scale"></div>
+              <div class="editor__range-bar">
+                <svg class="editor__range--item editor__range--fill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="253px" height="253px" viewBox="22.5 69.048 253 253" enable-background="new 22.5 69.048 253 253" xml:space="preserve">
+                  <path fill="#d22856" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="editor__range editor__range--hidden">
+              <div class="editor__range-scale"></div>
+              <div class="editor__range-bar">
+                <svg class="editor__range--item editor__range--filter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="253px" height="253px" viewBox="22.5 69.048 253 253" enable-background="new 22.5 69.048 253 253" xml:space="preserve">
+                  <path fill="#d22856" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
           </div>
           <div class="editor__btn-wrapper">
             <button class="editor__btn editor__btn--submit" type="submit">Запостить</button>
